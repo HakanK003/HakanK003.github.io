@@ -4,7 +4,8 @@
   padding: 0;
   box-sizing: border-box;
 }
-/* :root {
+
+:root {
     --gap: 24px;
     --content-gap: 20px;
     --nav-width: 1024px;
@@ -12,44 +13,103 @@
     --header-height: 60px;
     --footer-height: 60px;
     --radius: 8px;
-    --theme: rgb(255, 255, 255);
-    --entry: rgb(255, 255, 255);
-    --primary: rgb(30, 30, 30);
-    --secondary: rgb(108, 108, 108);
-    --tertiary: rgb(214, 214, 214);
-    --content: rgb(31, 31, 31);
-    --hljs-bg: rgb(28, 29, 33);
-    --code-bg: rgb(245, 245, 245);
-    --border: rgb(238, 238, 238)
 }
 
-.dark {
-    --theme: rgb(29, 30, 32);
+/* Light theme defaults */
+:root {
+
+
+    --theme: rgb(29, 30, 32); /* Background */
     --entry: rgb(46, 46, 51);
-    --primary: rgb(218, 218, 219);
-    --secondary: rgb(155, 156, 157);
-    --tertiary: rgb(65, 66, 68);
-    --content: rgb(196, 196, 197);
-    --hljs-bg: rgb(46, 46, 51);
-    --code-bg: rgb(55, 56, 62);
-    --border: rgb(51, 51, 51)
+
+    --primary: rgb(218, 218, 219);/* Titles */
+    --secondary: rgb(155, 156, 157); /* Mini Explanations */
+    --tertiary: rgb(65, 66, 68);/* Block Background */
+
+    --content: rgb(196, 196, 197);/* Paragraphs */
+    --hljs-bg: rgb(46, 46, 51);/* ??? */
+    --code-bg: rgb(55, 56, 62);/* Code Snippets? */
+
+    --border: rgb(51, 51, 51);/* Border */
+
+    --hoverover: #007bff; /*Hover Over Color*/
+
+    /* --theme: rgb(255, 255, 255);
+    --entry: rgb(255, 255, 255);
+
+    --primary: rgb(30, 30, 30); 
+    --secondary: rgb(108, 108, 108);
+    --tertiary: rgb(214, 214, 214); 
+
+    --content: rgb(31, 31, 31); 
+    --hljs-bg: rgb(28, 29, 33); 
+    --code-bg: rgb(245, 245, 245); 
+
+    --border: rgb(238, 238, 238); 
+
+    --hoverover: #007bff;  */
+}
+
+/* Dark theme overrides */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --theme: rgb(29, 30, 32);
+        --entry: rgb(46, 46, 51);
+
+        --primary: rgb(218, 218, 219);
+        --secondary: rgb(155, 156, 157);
+        --tertiary: rgb(65, 66, 68);
+
+        --content: rgb(196, 196, 197);
+        --hljs-bg: rgb(46, 46, 51);
+        --code-bg: rgb(55, 56, 62);
+
+        --border: rgb(51, 51, 51);
+
+        --hoverover: #007bff;
+
+    }
+}
+
+/* Title hover */
+/* h3:hover {
+    color: #007bff;
 } */
+
+/* Icons */
+#theme-toggle {
+    cursor: pointer;
+}
+#sun, #moon {
+    display: none;
+}
+
+
 body {
   font-family: 'Segoe UI', sans-serif;
   line-height: 1.6;
-  background-color: #f8f9fa;
-  color: #333;
+  background: var(--theme);
+  color: var(--primary);
+}
+
+main {
+  margin-right: 5%;
+  margin-left: 5%;
+  padding: 24px;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #343a40;
-  color: white;
+  color: var(--primary);
+  background-color: var(--theme);
   padding: 1rem 2rem;
 }
 
+h3 {
+  color: var(--primary);
+}
 /* Home Page Settings */
 nav h1 {
   font-size: 1.5rem;
@@ -102,18 +162,26 @@ img {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
-.project-card {
-  background: white;
+.entry-block {
+  background: var(--tertiary);
   border: 1px solid #ccc;
   padding: 1rem;
   border-radius: 8px;
   box-shadow: 2px 2px 8px rgba(0,0,0,0.05);
 }
 
+.entry-block-title{
+  color: var(--primary);
+}
+
+.entry-block-content{
+  color: var(--secondary);
+}
+
 footer {
   text-align: center;
   padding: 1rem;
-  background: #343a40;
+  background: var(--tertiary);
   color: white;
   margin-top: 2rem;
 }
@@ -125,13 +193,18 @@ footer {
 }
 
 .project-entry {
-  margin-bottom: 2rem;
-  background: #fff;
-  padding: 1rem;
+  margin: 1rem;
+  background: var(--tertiary);
+  padding: 3rem;
   border-radius: 8px;
   box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
-
+.project-entry-title{
+  color: var(--primary);
+}
+.project-entry-content{
+  color: var(--primary);
+}
 .project-entry img,
 .project-entry video {
   width: 100%;
@@ -143,6 +216,33 @@ footer {
 
 /* Education Page Settings */
 
+.creInfoMainDiv{
+  margin: auto;
+  padding: 3rem;
+
+
+  border-color: #007bff;
+  border-radius: 5px;
+  border-style: outset;
+}
+
+.creInfoSections {
+  margin: auto;
+  padding: 3rem;
+}
+
+.creInfoMainTitle {
+  margin: auto;
+  padding-bottom: 0.5rem;
+
+  font-size:xx-large;
+  font-style: italic;
+  color: #007bff;
+} 
+
+.creInfo{
+  margin: 0.75rem;
+}
 .credentials ul {
   list-style: none;
   padding-left: 0;

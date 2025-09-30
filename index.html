@@ -12,6 +12,29 @@
         <header>
             <nav>
                 <h1>Hakan Karatas</h1>
+                <!-- <button id="theme-toggle" aria-label="Toggle theme">
+
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+
+                </button> -->
                 <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="projects.html">Projects</a></li>
@@ -26,35 +49,55 @@
 
         <main>
             <section id="about" class="about">
-                <h2>About Me</h2>
-                <p>
-                    I'm a computer engineering student with interests in AI, robotics, and
-                    systems programming. Passionate about building tools that solve real problems.
-                </p>
-                <p>
-                    Computer engineering student with hands-on experience in test automation, web development, and growing expertise in AI/ML through personal projects. 
-                    Skilled in Java, Python, C/C++, and algorithms. 
-                    Strong communicator with problem-solving skills, able to work independently or in teams. 
-                    Quick learner, eager to contribute to AI/ML, robotics, and research projects, while adaptable to roles in software development and test automation.
-                </p>
+                <h2 class="entry-block-title">About Me</h2>
+                <br>
+                <div class="entry-block">
+                    <h3 class="entry-block-title">Background</h3>
+                    <p class="entry-block-content">
+                        I'm a computer engineering student with interests in AI, robotics, and
+                        systems programming. Passionate about building tools that solve real problems.
+                    </p>
+                    <p class="entry-block-content">
+                        I have hands-on experience in test automation, web development, and some (still working) in AI/ML through personal projects. 
+                        Skilled in Java, Python, C/C++, and algorithms. 
+                        Strong communicator with problem-solving skills, able to work independently or in teams. 
+                        Quick learner, eager to contribute to AI/ML, robotics, and research projects, while adaptable to roles in software development and test automation.
+                        
+                    </p>
+                    <br>
+                    <h3 class="entry-block-title">Interest</h3>
+                    <p class="entry-block-content">
+                        My path into computer engineering is fueled by an expanding curiosity that pushes me beyond a single specialty. 
+                        This portfolio is a reflection of my evolving interests and the projects that have shaped my skills as a developer and engineer. 
+                        I thrive on connecting diverse ideas to solve problems and am always seeking new challenges to broaden my experience.
+                    </p>
+                </div>
+
             </section>
 
             <section id="projects" class="projects">
                 <h2>Projects</h2>
+                <br>
                 <div class="project-grid">
-                    <div class="project-card">
-                        <h3>Neural Network Visualizer</h3>
-                        <p>Built with Python and React. Visualizes feedforward neural networks with animations.</p>
+                    <div class="entry-block">
+                        <h3 class="entry-block-title">Java Path Finding Simulation</h3>
+                        <p class="entry-block-content">Built with pure Java. Finds shortest path, starts following path, and if an object identified recalculates shortest path and continues from new path.</p>
                     </div>
-                    <div class="project-card">
-                        <h3>Matrix Calculator</h3>
-                        <p>Work in progress...</p>
-                        <p>Console-based matrix operations tool written in C++. Handles large matrix inputs efficiently.</p>
+                    <div class="entry-block">
+                        <h3 class="entry-block-title">Custom E2E Test Automation Framework</h3>
+                        <p class="entry-block-content">Built customized BDD Cucumber End To End Web Application Functional Test Automation Framework. Using Java, Selenium, Rest Assured Libraries, JDBC, Cucumeber.</p>
                     </div>
-                    <div class="project-card">
-                        <h3>Java Path Finding Simulation</h3>
-                        <p>Built with pure Java. Finds shortest path, starts following path, and if an object identified recalculates shortest path and continues from new path.</p>
+                    <div class="entry-block">
+                        <h3 class="entry-block-title">AI Exploration Projects</h3>
+                        <p class="entry-block-content">Work in progress...</p>
+                        <p class="entry-block-content">Currently developing small projects to explore neural networks and image processing. Including FreeCodeCamp, OpenCV courses, and Neural Network Visualizer.</p>
                     </div>
+                    <div class="entry-block">
+                        <h3 class="entry-block-title">Matrix Calculator</h3>
+                        <p class="entry-block-content">Work in progress...</p>
+                        <p class="entry-block-content">Console-based matrix operations tool written in C++. Handles large matrix inputs efficiently.</p>
+                    </div>
+
                     <!-- Add more project cards as needed -->
                 </div>
             </section>
@@ -70,5 +113,8 @@
         <footer>
             <p>&copy; 2025 Hakan Karatas. All rights reserved.</p>
         </footer>
+        
     </body>
+    <script src="main.js"></script>
+
 </html>
