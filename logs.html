@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logs | Hakan Karatas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=JetBrains+Mono:wght@300;400;600&family=Archivo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav-container">
+        <div class="nav-content">
+            <a href="index.html" class="logo">CE_PORT</a>
+            <div class="desktop-nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="experience.html" class="nav-link">Experience</a>
+                <a href="credentials.html" class="nav-link">Credentials</a>
+                <a href="hobbies.html" class="nav-link">Hobbies</a>
+                <a href="logs.html" class="nav-link active">Logs</a>
+            </div>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="index.html" class="mobile-nav-link">Home</a>
+            <a href="projects.html" class="mobile-nav-link">Projects</a>
+            <a href="experience.html" class="mobile-nav-link">Experience</a>
+            <a href="credentials.html" class="mobile-nav-link">Credentials</a>
+            <a href="hobbies.html" class="mobile-nav-link">Hobbies</a>
+            <a href="logs.html" class="mobile-nav-link">Logs</a>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="section-content">
+            <h2 class="section-title">Development Logs</h2>
+            <p class="section-description">Notes, thoughts, and progress updates from my engineering adventures</p>
+            
+            <div class="logs-filter-container">
+                <button class="filter-toggle" id="filterToggle">
+                    Filter by Tags
+                    <span class="filter-count" id="filterCount" style="display:none;">0</span>
+                </button>
+
+                <div class="active-filters" id="activeFilters"></div>
+
+                <div class="filter-dropdown" id="filterDropdown" style="display:none;">
+                    <div class="filter-dropdown-header">
+                        <h4>Select Tags</h4>
+                        <span class="filter-instruction">Click to toggle filters</span>
+                    </div>
+                    <div class="filter-tags" id="filterTags"></div>
+                </div>
+            </div>
+
+            <div class="logs-counter" id="logsCounter">Showing 8 of 8 logs</div>
+
+            <div class="logs-container" id="logsContainer">
+                <!-- Logs populated by JavaScript -->
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-text">© 2026 Hakan Karatas. All rights reserved.</p>
+            <p class="footer-credit">Designed and developed by Hakan.<br>Used AI tools for some animations and design ideas.</p>
+            <div class="footer-links">
+                <a href="mailto:your.email@example.com">Contact</a>
+                <span class="footer-separator">-</span>
+                <a href="#top">Back to top</a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="js/logs.js"></script>
+</body>
+</html>

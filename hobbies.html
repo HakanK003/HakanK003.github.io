@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobbies | Your Name</title>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=JetBrains+Mono:wght@300;400;600&family=Archivo:wght@300;400;600;700&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav-container">
+        <div class="nav-content">
+            <a href="index.html" class="logo">CE_PORT</a>
+            <div class="desktop-nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="experience.html" class="nav-link">Experience</a>
+                <a href="credentials.html" class="nav-link">Credentials</a>
+                <a href="hobbies.html" class="nav-link active">Hobbies</a>
+                <a href="logs.html" class="nav-link">Logs</a>
+            </div>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="index.html" class="mobile-nav-link">Home</a>
+            <a href="projects.html" class="mobile-nav-link">Projects</a>
+            <a href="experience.html" class="mobile-nav-link">Experience</a>
+            <a href="credentials.html" class="mobile-nav-link">Credentials</a>
+            <a href="hobbies.html" class="mobile-nav-link">Hobbies</a>
+            <a href="logs.html" class="mobile-nav-link">Logs</a>
+        </div>
+    </nav>
+    <main class="main-content">
+        <div class="section-content">
+            <h2 class="section-title">Beyond the Code</h2>
+            <p class="section-description">What I do when I'm not debugging hardware or writing firmware</p>
+            
+            <div class="hobbies-grid">
+                <div class="hobby-card" onclick="openModal('electronics')">
+                    <div class="hobby-icon">⚡</div>
+                    <h3>Calisthenics</h3>
+                    <p>Long-term practice focused on progressive overload, injury prevention, and consistency.</p>
+                    <div class="hobby-action">
+                        <span>Learn more</span>
+                        <span>→</span>
+                    </div>
+                </div>
+
+                <div class="hobby-card" onclick="openModal('3dprinting')">
+                    <div class="hobby-icon">🖨️</div>
+                    <h3>3D Design</h3>
+                    <p>Modeling, lighting, and animation in Blender to visualize systems, environments, and physical intuition.</p>
+                    <div class="hobby-action">
+                        <span>Learn more</span>
+                        <span>→</span>
+                    </div>
+                </div>
+
+                <div class="hobby-card" onclick="openModal('gaming')">
+                    <div class="hobby-icon">🎮</div>
+                    <h3>Music</h3>
+                    <p>Analyzing structure, harmony, rhythm, and emotional dynamics across genres; using music as a lens for pattern recognition and emotional regulation.</p>
+                    <div class="hobby-action">
+                        <span>Learn more</span>
+                        <span>→</span>
+                    </div>
+                </div>
+                
+                <div class="hobby-card" onclick="openModal('keyboards')">
+                    <div class="hobby-icon">⌨️</div>
+                    <h3>Martial Art (Planned)</h3>
+                    <p>Focused on discipline, controlled intensity, and mind–body coordination.</p>
+                    <div class="hobby-action">
+                        <span>Learn more</span>
+                        <span>→</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modals -->
+    <div id="modal-electronics" class="modal-overlay" onclick="closeModal('electronics')">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <button class="modal-close" onclick="closeModal('electronics')">✕</button>
+            <div class="modal-header">
+                <span class="modal-icon">⚡</span>
+                <h2>Electronics Tinkering</h2>
+            </div>
+            <div class="modal-body">
+                <p class="modal-description">
+                    I love taking things apart to understand how they work. From vintage radios to modern IoT devices, 
+                    reverse engineering hardware teaches me invaluable lessons about design decisions and engineering trade-offs.
+                </p>
+                <div class="modal-section">
+                    <h3>Notable Projects & Accomplishments</h3>
+                    <ul class="modal-list">
+                        <li>Modified vintage radio to add Bluetooth connectivity</li>
+                        <li>Reverse engineered a smart home device protocol</li>
+                        <li>Built custom Arduino-based automation systems</li>
+                        <li>Repaired and upgraded retro gaming consoles</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-keyboards" class="modal-overlay" onclick="closeModal('keyboards')">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <button class="modal-close" onclick="closeModal('keyboards')">✕</button>
+            <div class="modal-header">
+                <span class="modal-icon">⌨️</span>
+                <h2>Mechanical Keyboards</h2>
+            </div>
+            <div class="modal-body">
+                <p class="modal-description">
+                    Mechanical keyboards combine engineering, aesthetics, and functionality. I design custom PCBs, 
+                    hand-solder switches, and program firmware to create unique typing experiences.
+                </p>
+                <div class="modal-section">
+                    <h3>Notable Projects & Accomplishments</h3>
+                    <ul class="modal-list">
+                        <li>Designed and built a 60% split keyboard</li>
+                        <li>Created custom QMK firmware with advanced macros</li>
+                        <li>3D printed custom keyboard cases</li>
+                        <li>Experimented with different switch types and keycap profiles</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-3dprinting" class="modal-overlay" onclick="closeModal('3dprinting')">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <button class="modal-close" onclick="closeModal('3dprinting')">✕</button>
+            <div class="modal-header">
+                <span class="modal-icon">🖨️</span>
+                <h2>3D Printing</h2>
+            </div>
+            <div class="modal-body">
+                <p class="modal-description">
+                    3D printing bridges the gap between digital design and physical reality. I use it to create custom 
+                    enclosures for electronics projects, replacement parts, and functional prototypes.
+                </p>
+                <div class="modal-section">
+                    <h3>Notable Projects & Accomplishments</h3>
+                    <ul class="modal-list">
+                        <li>Designed enclosures for Raspberry Pi projects</li>
+                        <li>Created custom mounting brackets for sensors</li>
+                        <li>Printed replacement parts for vintage electronics</li>
+                        <li>Experimented with different materials (PLA, PETG, TPU)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-gaming" class="modal-overlay" onclick="closeModal('gaming')">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <button class="modal-close" onclick="closeModal('gaming')">✕</button>
+            <div class="modal-header">
+                <span class="modal-icon">🎮</span>
+                <h2>Retro Gaming</h2>
+            </div>
+            <div class="modal-body">
+                <p class="modal-description">
+                    Classic game consoles are fascinating pieces of engineering history. I collect, restore, and 
+                    sometimes modify them to keep these pieces of computing history alive.
+                </p>
+                <div class="modal-section">
+                    <h3>Notable Projects & Accomplishments</h3>
+                    <ul class="modal-list">
+                        <li>Restored original Nintendo Entertainment System</li>
+                        <li>Built a MAME arcade cabinet from scratch</li>
+                        <li>Modified Game Boy for backlit screen</li>
+                        <li>Developed FPGA-based console emulators</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-text">© 2026 Hakan Karatas. All rights reserved.</p>
+            <p class="footer-credit">Designed and developed by Hakan.<br>Used AI tools for some animations and design ideas.</p>
+            <div class="footer-links">
+                <a href="mailto:your.email@example.com">Contact</a>
+                <span class="footer-separator">-</span>
+                <a href="#top">Back to top</a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="js/hobbies.js"></script>
+</body>
+</html>

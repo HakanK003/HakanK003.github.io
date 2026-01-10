@@ -1,179 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="author" content="Hakan Karatas"/>
-    <link rel="icon" href="/images/HKFavicon.png">
-    <title>Projects | Hakan Karatas</title>
-    <link rel="stylesheet" href="style.css" />
-    </head>
-    <body>
-    <header>
-        <nav>
-        <h1>Hakan Karatas</h1>
-        <!-- <button id="theme-toggle">Toggle Theme</button> -->
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="education.html">Credentials</a></li>
-        </ul>
-        </nav>
-    </header>
-
-    <main class="container">
-        <h2>My Projects</h2>
-        <!-- Add more project-entry sections as needed -->
-        <!-- 
-        <div class="project-entry">
-            <h3>Project Name</h3>
-            <img src="images/projectimages.png" alt="image explain" />
-            <p>
-                Idea. Why? How?
-            </p>
-            <h3>Tools Used</h3>
-            <ul class="project-tools-list">
-                <li>Java</li>
-                <li>Java</li>
-                <li>Java</li>
-            </ul>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Your Name</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=JetBrains+Mono:wght@300;400;600&family=Archivo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav-container">
+        <div class="nav-content">
+            <a href="index.html" class="logo">CE_PORT</a>
+            <div class="desktop-nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="projects.html" class="nav-link active">Projects</a>
+                <a href="experience.html" class="nav-link">Experience</a>
+                <a href="credentials.html" class="nav-link">Credentials</a>
+                <a href="hobbies.html" class="nav-link">Hobbies</a>
+                <a href="logs.html" class="nav-link">Logs</a>
+            </div>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                <span class="hamburger"></span>
+            </button>
         </div>
-        -->
-        <div class="project-entry">
-            <h3 class="project-entry-title">Path Finder Simulation</h3>
-            <img src="images/pathFinderSim.png" alt="Path Finder Simulation" />
-            <p class="project-entry-content">
-                Built with pure Java. Finds shortest path, starts following path, and if an object identified recalculates shortest path and continues from new path.
-            </p>
-            <br>
-            <h3 class="project-entry-title">Tools Used</h3>
-            <ul class="project-tools-list">
-                <li class="project-entry-content">Java</li>
-                <li class="project-entry-content">Data Structures</li> 
-                <li class="project-entry-content">Algorithms</li>
-                <li class="project-entry-content">A Star</li>
-            </ul>
-            <p class="project-entry-content">You can check out the GitHub repository for this project from 
-                <a href="https://github.com/HakanK003/PathFindingSimulation_Version2" target="_blank">here</a>.
-            </p>
+        
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="index.html" class="mobile-nav-link">Home</a>
+            <a href="projects.html" class="mobile-nav-link">Projects</a>
+            <a href="experience.html" class="mobile-nav-link">Experience</a>
+            <a href="credentials.html" class="mobile-nav-link">Credentials</a>
+            <a href="hobbies.html" class="mobile-nav-link">Hobbies</a>
+            <a href="logs.html" class="mobile-nav-link">Logs</a>
         </div>
+    </nav>
 
-        <div class="project-entry">
-            <h3 class="project-entry-title">Custom E2E Test Automation Framework</h3>
-            <p class="project-entry-content">
-                Built customized BDD Cucumber End To End Web Application Functional Test Automation Framework. Using Java, Selenium, Rest Assured Libraries, JDBC, Cucumeber.
-            </p>
-            <br>
-            <h3 class="project-entry-title">Tools Used</h3>
-            <ul class="project-tools-list">
-                <li class="project-entry-content">Java</li>
-                <li class="project-entry-content">Cucumber</li>
-                <li class="project-entry-content">Selenium</li>
-                <li class="project-entry-content">Rest Assured Libraries</li>
-                <li class="project-entry-content">SQL</li>
-                <li class="project-entry-content">JDBC</li>
-            </ul>
-            <p class="project-entry-content">You can check out the GitHub repository for this project from 
-                <a href="https://github.com/HakanK003/end2end_functionaltesting_cucumber" target="_blank">here</a>.
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="section-content">
+            <h2 class="section-title">Projects</h2>
+            <p class="section-description">
+                A collection of embedded systems, FPGA designs, and hardware builds that showcase my engineering journey
             </p>
             
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/ProjectPlaceHolderImage.png" alt="Deploying ML Models To Embedded Systems">
+                    </div>
+                    <div class="project-content">
+                        <span class="status-badge ongoing">Ongoing</span>
+                        <h3>Deploying ML Models To Embedded Systems</h3>
+                        <p class="project-description">
+                            Deploying and running existing ML models on a RaspberryPi. 
+                            Optimization of models in order to run efficiently.
+                        </p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">AI</span>
+                            <span class="tech-tag">ML</span>
+                            <span class="tech-tag">RaspberryPi</span>
+                            <span class="tech-tag">Optimization</span>
+                        </div>
+                        <div class="project-footer">
+                            <span class="project-year">2026</span>
+                            <a href="https://github.com/HakanK003" target="_blank" class="project-link">
+                                View on GitHub →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/ProjectPlaceHolderImage.png" alt="Deploying ML Models To Embedded Systems">
+                    </div>
+                    <div class="project-content">
+                        <span class="status-badge on-hold">On Hold</span>
+                        <h3>Habit App</h3>
+                        <p class="project-description">
+                            Crossplatform web application for tracking habits.
+                        </p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">Spring Boot</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                        </div>
+                        <div class="project-footer">
+                            <span class="project-year">2024</span>
+                            <a href="https://github.com/HakanK003" target="_blank" class="project-link">
+                                View on GitHub →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/pathFinderSim.png" alt="Path Finder Simulation">
+                        
+                    </div>
+                    <div class="project-content">
+                        <span class="status-badge completed">Completed</span>
+                        <h3>Path Finder Simulation</h3>
+                        <p class="project-description">
+                            Finds shortest path in 2D, starts following path.
+                            If an object identified on the way recalculates shortest path and continues from new path.
+                        </p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">A Star</span>
+                            <span class="tech-tag">Algorithms</span>
+                            <span class="tech-tag">Data Structures</span>
+                            <span class="tech-tag">OOP</span>
+                        </div>
+                        <div class="project-footer">
+                            <span class="project-year">2025</span>
+                            <a href="https://github.com/HakanK003/PathFindingSimulation_Version2" target="_blank" class="project-link">
+                                View on GitHub →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/ProjectPlaceHolderImage.png" alt="E2E Test Automation Framework">
+                        
+                    </div>
+                    <div class="project-content">
+                        <span class="status-badge completed">Completed</span>
+                        <h3>Custom E2E Test Automation Framework</h3>
+                        <p class="project-description">
+                            Built customized BDD Cucumber End To End Web Application Functional Test Automation Framework. 
+                            Optimized reusability of Rest Assured libraries and Cucumber framework.
+                        </p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">Test Automation</span>
+                            <span class="tech-tag">Cucumber</span>
+                            <span class="tech-tag">Selenium</span>
+                            <span class="tech-tag">Rest Assured Libraries</span>
+                            <span class="tech-tag">SQL</span>
+                            <span class="tech-tag">JDBC</span>
+                        </div>
+                        <div class="project-footer">
+                            <span class="project-year">2022</span>
+                            <a href="https://github.com/HakanK003/end2end_functionaltesting_cucumber" target="_blank" class="project-link">
+                                View details on GitHub →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
-
-        <div class="project-entry">
-            <h3 class="project-entry-title">AI ML Course with TensorFlow</h3>
-            <p class="project-entry-content">
-                Exploring TensorFlow. I follow tutorials from YouTube and FreeCodeCamp like <a href="https://www.freecodecamp.org/learn/machine-learning-with-python/" target="_blank">this</a>.
-            </p>
-            <br>
-            <h3>Tools Used</h3>
-            <ul class="project-tools-list">
-                <li class="project-entry-content">Python</li>
-                <li class="project-entry-content">TensorFlow</li>
-                <li class="project-entry-content">Neural Network</li>
-                <li class="project-entry-content">AI</li>
-                <li class="project-entry-content">ML</li>
-            </ul>
-        </div>
-
-        <div class="project-entry">
-            <h3 class="project-entry-title">OpenCV Exploration</h3>
-            <p class="project-entry-content">
-                Exploring OpenCV libraries. I follow tutorials from YouTube and FreeCodeCamp like <a href="https://www.youtube.com/watch?v=P4Z8_qe2Cu0&t=9292s" target="_blank">this</a>.
-            </p>
-            <br>
-            <h3>Tools Used</h3>
-            <ul class="project-tools-list">
-                <li class="project-entry-content">Python</li>
-                <li class="project-entry-content">OpenCV</li>
-            </ul>
-        </div>
-
-        <div class="project-entry">
-            <h3 class="project-entry-title">Habit Tracker App</h3>
-            <p class="project-entry-content">
-                Building a full-stack web application to track and analyze user habits and give recommendations according to data.
-                <br>
-                I made the design of application and database. Currently I am learning Spring Boot, trying to build API and the framework of the application. Once I complete the project, I plan to host the application on a RaspberryPi (or AWS).
-            </p>
-            <br>
-            <h3>Tools Used</h3>
-            <ul class="project-tools-list">
-                <li class="project-entry-content">Java</li>
-                <li class="project-entry-content">Spring Boot</li>
-                <li class="project-entry-content">PostgreSQL</li>
-                <li class="project-entry-content">React</li>
-                <li class="project-entry-content">RaspberryPi (or AWS)</li>
-        
-            </ul>
-
-        </div>
-        
-        <div class="project-entry">
-            <h3 class="project-entry-title">Matrix Calculator (C++)</h3>
-            <p class="project-entry-content">
-                A command-line matrix calculator built in C++ that performs basic and advanced matrix operations (addition, multiplication, determinant, inverse, etc.).
-            </p>
-            <br>
-            <h3>Tools Used</h3>
-            <ul class="project-tools-list">
-                <li class="project-entry-content">C++</li>
-        
-            </ul>
-
-        </div>
-        
-        <div class="project-entry">
-            <h3 class="project-entry-title">Neural Network Visualizer</h3>
-            <p class="project-entry-content">
-                A tool to visualize forward propagation in neural networks, built with React and Python backend. Animates layers and connections as data flows.
-            </p>
-            <p class="project-entry-content">
-                Inspired from Radu Mariescu-Istodor. Here is the <a href="https://youtu.be/lok3RVBwSqE?si=Jq_RdCzwJgc1F9EF" target="_blank">link</a> to his original project video.
-            </p>
-            <br>
-            <h3 class="project-entry-title">Tools Used</h3>
-            <ul class="project-tools-list">
-                <li class="project-entry-content">Python</li>
-                <li class="project-entry-content">HTML</li>
-                <li class="project-entry-content">JavaScript</li>
-                <li class="project-entry-content">CSS</li>
-            </ul>
-            <!-- <video controls width="100%">
-                <source src="videos/nn-demo.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video> -->
-        </div>
-
-
-
-        
     </main>
 
-        <footer>
-            <p>&copy; 2025 Hakan Karatas. All rights reserved.</p>
-        </footer>
-    </body>
-    <script src="main.js"></script>
+    <!-- Footer -->
+    
+    
+     
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-text">© 2026 Hakan Karatas. All rights reserved.</p>
+            <p class="footer-credit">Designed and developed by Hakan.<br>Used AI tools for some animations and design ideas.</p>
+            <div class="footer-links">
+                <a href="mailto:your.email@example.com">Contact</a>
+                <span class="footer-separator">-</span>
+                <a href="#top">Back to top</a>
+            </div>
+        </div>
+    </footer>
 
+    <script src="js/main.js"></script>
+</body>
 </html>
