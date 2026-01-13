@@ -451,6 +451,10 @@ body {
   box-shadow: 0 5px 20px rgba(65, 105, 225, 0.3);
 }
 
+.link{
+    text-decoration: none;
+}
+
 /* Link info layout - label and URL */
 .link-info {
   display: flex;
@@ -608,6 +612,7 @@ body {
 
 /* Status badge overlay on image */
 .status-badge {
+  margin-bottom: 0.75rem;
   position: absolute;
   top: 1rem;
   right: 1rem;
@@ -663,6 +668,7 @@ body {
   font-size: 1.4rem;
   color: var(--white);
   margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
 }
 
 .project-description {
@@ -851,7 +857,7 @@ body {
   gap: 1rem;
   margin-bottom: 2rem;
   padding-bottom: 1rem;
-  border-bottom: 2px solid var(--grey);
+  border-bottom: 1px solid var(--blue-dark);
 }
 
 .section-icon {
@@ -901,6 +907,76 @@ body {
   font-size: 0.85rem;
   color: #666;
   margin-top: 0.5rem;
+}
+
+/* ==================== Skills GRID LAYOUT ==================== */
+/* Simpler grid layout for skills page */
+.skills-section {
+  margin-bottom: 4rem;
+}
+
+.skills-section-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--blue-dark);
+}
+
+.skills-section-header h3 {
+  font-size: 1.8rem;
+  color: var(--white);
+  padding: 2 rem;
+  margin-top: 2 rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.skills-card {
+  background: var(--dark-grey);
+  border: 1px solid var(--light-grey);
+  border-radius: 12px;
+  padding: 2rem;
+  transition: var(--transition-medium);
+}
+
+.skills-card:hover {
+  border-color: var(--blue);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(65, 105, 225, 0.2);
+}
+
+.skills-card h4 {
+  font-size: 1.3rem;
+  color: var(--white);
+  margin-bottom: 0.5rem;
+}
+
+.skills-mini-header {
+  color: var(--blue);
+  margin-bottom: 0.75rem;
+}
+
+.skills-id {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 0.5rem;
+}
+
+.skills-list{
+  margin-left: 1.5rem;
+}
+
+.skills-list-item{
+  margin-left: 1.5rem;
+  color: #aaa;
 }
 
 /* ==================== HOBBIES PAGE ==================== */
