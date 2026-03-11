@@ -417,6 +417,16 @@ body {
   line-height: 1.8;
 }
 
+.summary-section li {
+  color: #ccc;
+  line-height: 1.8;
+}
+
+.summary-section ul {
+  color: #ccc;
+  line-height: 1.8;
+}
+
 .listitems{
   margin-left: 20px;
 }

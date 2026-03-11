@@ -6,6 +6,24 @@
 // Development logs data
 const logs = [
     {
+        date: "2026-03-05",
+        title: "Started Capstone Project Design for ECE 350",
+        content: "Formed pair groups and started discusing capstone project ideas for our embedded systems class.",
+        tags: ["Python", "Linux", "Sensors", "Single Board Computer (SBC)", "Raspberry Pi", "Embedded Systems", "Hardware", "Software"]
+    },
+    {
+        date: "2026-02-20",
+        title: "Bench Oscilloscope Exploration",
+        content: "Spent around 4 hours to learn how to use a bench oscilloscope (Rigol DS 1104). Used a Raspberry Pi to generate pulses.",
+        tags: ["Tools", "Embedded Systems", "Raspberry Pi", "Hardware"]
+    },
+    {
+        date: "2026-02-17",
+        title: "Joined BLIMPs Program",
+        content: "Started to BLIMPs program. We will meet weekly and build prototypes using C and MCU in three student groups.",
+        tags: ["C", "Microcontroller (MCU)", "Bio-Inpired Design", "Embedded Systems", "Hardware", "Software"]
+    },
+    {
         date: "2026-01-09",
         title: "Updated My Portfolio Website",
         content: "Spent around 6 hours to change whole design and update information.",
