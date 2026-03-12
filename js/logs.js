@@ -29,24 +29,24 @@ const logs = [
         content: "Spent around 6 hours to change whole design and update information.",
         tags: ["HTML", "CSS", "JavaScript", "Software"]
     },
-    {
-        date: "2024-09-18",
-        title: "Raspberry Pi Cluster Setup",
-        content: "Got all 4 Raspberry Pis networked and running Kubernetes. Still troubleshooting some networking issues, but the cluster is operational. Planning to use it for distributed computing experiments.",
-        tags: ["Learning", "Software", "Hardware", "Software"]
-    },
-    {
-        date: "2024-08-30",
-        title: "Internship Reflection",
-        content: "Last day of my summer internship. Learned so much about professional embedded systems development. Working with experienced engineers showed me how much there is to learn. Excited to apply these lessons to my projects.",
-        tags: ["Career", "Internship", "Reflection", "Embedded Systems"]
-    },
-    {
-        date: "2024-08-12",
-        title: "3D Printer Calibration",
-        content: "Spent the weekend calibrating my 3D printer. Dialed in the perfect settings for printing electronics enclosures. The dimensional accuracy is now within 0.1mm. Time to print all those pending project cases!",
-        tags: ["Hobbies", "3D Printing", "Tools", "Personal Project"]
-    }
+    // {
+    //     date: "2024-09-18",
+    //     title: "Raspberry Pi Cluster Setup",
+    //     content: "Got all 4 Raspberry Pis networked and running Kubernetes. Still troubleshooting some networking issues, but the cluster is operational. Planning to use it for distributed computing experiments.",
+    //     tags: ["Learning", "Software", "Hardware", "Software"]
+    // },
+    // {
+    //     date: "2024-08-30",
+    //     title: "Internship Reflection",
+    //     content: "Last day of my summer internship. Learned so much about professional embedded systems development. Working with experienced engineers showed me how much there is to learn. Excited to apply these lessons to my projects.",
+    //     tags: ["Career", "Internship", "Reflection", "Embedded Systems"]
+    // },
+    // {
+    //     date: "2024-08-12",
+    //     title: "3D Printer Calibration",
+    //     content: "Spent the weekend calibrating my 3D printer. Dialed in the perfect settings for printing electronics enclosures. The dimensional accuracy is now within 0.1mm. Time to print all those pending project cases!",
+    //     tags: ["Hobbies", "3D Printing", "Tools", "Personal Project"]
+    // }
 ];
 
 // State
