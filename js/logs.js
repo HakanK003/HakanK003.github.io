@@ -6,6 +6,18 @@
 // Development logs data
 const logs = [
     {
+        date: "2026-04-28",
+        title: "Completed Capstone Project for ECE 350",
+        content: "We showcased our project and demonstrated how it works to professors, students, and other people interested. Even though we had some unexpected pop up problems along the way, it was a succesful journey.",
+        tags: ["Python", "Linux", "Sensors", "Single Board Computer (SBC)", "Raspberry Pi", "Embedded Systems", "Hardware", "Software"]
+    },
+    {
+        date: "2026-04-21",
+        title: "Completed BLIMPs Program",
+        content: "We showcased our project and demonstrated how it works to jury and students. Our BLIMP won flying race and become fastest BLIMP in our cohort.",
+        tags: ["C", "Microcontroller (MCU)", "Bio-Inpired Design", "Embedded Systems", "Hardware", "Software"]
+    },
+    {
         date: "2026-03-05",
         title: "Started Capstone Project Design for ECE 350",
         content: "Formed pair groups and started discusing capstone project ideas for our embedded systems class.",
